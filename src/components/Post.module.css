@@ -92,7 +92,7 @@
     max-height: none;
 }
 
-.form > button {
+.form footer button {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -105,6 +105,11 @@
     transition: background-color 0.1s;
     visibility: hidden;
     max-height: 0;
+}
+
+.form:focus-within footer button {
+    visibility: visible;
+    max-height: none;
 }
 
 .form > button:hover {
